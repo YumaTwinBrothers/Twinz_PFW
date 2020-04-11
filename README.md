@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Can't create new user record because users_controller doesn't exist
 
-Things you may want to cover:
+* Create users_controller
 
-* Ruby version
+* Add create action only in users_controller
 
-* System dependencies
+Message doesn't show up on chatroom page
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Maybe custom_display in ChatroomController doesn't work
