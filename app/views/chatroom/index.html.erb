@@ -1,10 +1,10 @@
 <h4 class="ui center aligned medium icon header">
   <i class="circular orange coffee icon"></i>
-  Say Something
+  Pray
 </h4>
 
-<div class="ui two column grid">
-  <div class="twelve wide column">
+<!-- <div class="ui two column grid">
+  <div class="twelve wide column"> -->
     <div class="ui fluid raised card chatbox">
       <div class="content" id="messages">
         <div class="ui feed" id="message-container">
@@ -15,15 +15,23 @@
         <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
           <div class="field">
             <div class="ui fluid icon input">
-              <%= f.text_field :body %>
-              <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
+              <%= f.text_field :username, placeholder: "Name", autofocus: true %>
+            </div>
+            <div class="ui fluid icon input">
+              <%= f.text_field :body, placeholder: "Content", autofocus: true %>
+            </div>
+            <div class="ui fluid icon">
+              <%= button_tag type: :submit, class: "btn btn-success" do %>
+                <%= "Pray" %>
+              <% end %>
             </div>
           </div>
         <% end %>
       </div>
     </div>
-  </div>
-
+<!--   </div>
+</div> -->
+<!--
   <div class="four wide column">
     <div class="ui fluid raised card chatbox">
       <div class="content">
@@ -41,4 +49,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :require_user
+  # before_action :require_user
 
   def create
     message = current_user.messages.build(message_params)
@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:body)
+    params.require(:message).permit(:body, :username)
   end
 
   def message_render(message)
