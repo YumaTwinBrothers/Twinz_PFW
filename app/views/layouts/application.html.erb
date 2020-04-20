@@ -8,16 +8,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <div class="ui small inverted menu">
-      <div class="ui container">
-        <%= render 'layouts/navigation' %>
+  <body class="fadeout">
+    <article>
+      <div class="ui small inverted menu">
+        <div class="ui container">
+          <%= render 'layouts/navigation' %>
+        </div>
       </div>
-    </div>
-    <div class="ui container">
-      <%= render 'layouts/messages' %>
-      <%= yield %>
-    </div>
+      <div class="ui container">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    </article>
   </body>
 </html>
