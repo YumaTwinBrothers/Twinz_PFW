@@ -22,6 +22,7 @@ body {
 
 .home-content {
   margin: 8% auto;
+  text-align: center;
 }
 
 .about {
@@ -45,17 +46,25 @@ body {
   font-size: 35px;
   border: 1px solid #888888;
   filter: drop-shadow(0 0 0.2rem black);
-  background-color: white;
+  background: white;
   border-radius: .5em;
   width: 50%;
   margin: 0 auto;
   padding: 15px;
 }
 
+.link-post:hover {
+  opacity: .8;
+}
+
 a {
   text-decoration: none;
   color: #888888;
   font-weight: lighter;
+}
+
+a:hover {
+  color: #888888;
 }
 
 body::after {

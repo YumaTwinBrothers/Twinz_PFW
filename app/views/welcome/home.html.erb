@@ -12,8 +12,9 @@
   <p class="total-number" align="center">
     Total Number of Prays <%= @number %>
   </p>
-
-  <h1 class="link-post" align="center">
-  <%= link_to "Pray For The World", posts_path %>
-  </h1>
+  <%= form_tag(posts_path,:method => 'get') do %>
+    <%= button_tag posts_path, class: "link-post" do %>
+      <%= 'Pray For The World' %>
+    <% end %>
+  <% end %>
 </div>
