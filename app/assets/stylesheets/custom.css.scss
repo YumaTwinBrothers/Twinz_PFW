@@ -1,7 +1,7 @@
 @import "semantic-ui";
 
 .chatbox {
-  height: 450px;
+  height: 540px;
 }
 
 #messages {
@@ -16,7 +16,7 @@
 }
 //chatroom
 article {
-  margin: 6% auto;
+  margin: 3% auto;
   text-align: center;
 }
 
@@ -37,6 +37,15 @@ input.ui.gray {
 button.ui.gray {
   margin-left: 20px;
   width: 30%;
+}
+button.ui.lighter {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px 18px;
+}
+
+input#message_body {
+  margin-top: 10px;
 }
 
 em {
