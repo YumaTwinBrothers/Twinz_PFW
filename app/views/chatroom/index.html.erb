@@ -2,33 +2,41 @@
   <i class="circular orange coffee icon"></i>
   Pray
 </h4>
-
+<%= form_tag(posts_path,:method => 'get') do %>
+  <div class="ui fluid icon input">
+    <%= text_field_tag :search %>
+  </div>
+  <%= submit_tag 'Search', :name => nil, class: "ui green button" %>
+  <%= button_tag posts_path, type: :submit, class: "ui green button" do %>
+    <%= 'All' %>
+  <% end %>
+<% end %>
 <!-- <div class="ui two column grid">
   <div class="twelve wide column"> -->
-    <div class="ui fluid raised card chatbox">
-      <div class="content" id="messages">
-        <div class="ui feed" id="message-container">
-          <%= render @messages %>
+<div class="ui fluid raised card chatbox">
+  <div class="content" id="messages">
+    <div class="ui feed" id="message-container">
+      <%= render @messages %>
+    </div>
+  </div>
+  <div class="extra content">
+    <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
+      <div class="field">
+        <div class="ui fluid icon input">
+          <%= f.text_field :username, placeholder: "Name", autofocus: true %>
+        </div>
+        <div class="ui fluid icon input">
+          <%= f.text_field :body, placeholder: "Content", autofocus: true %>
+          <div class="ui fluid icon">
+            <%= button_tag type: :submit, class: "ui green button" do %>
+              <%= "Pray" %>
+            <% end %>
+          </div>
         </div>
       </div>
-      <div class="extra content">
-        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
-          <div class="field">
-            <div class="ui fluid icon input">
-              <%= f.text_field :username, placeholder: "Name", autofocus: true %>
-            </div>
-            <div class="ui fluid icon input">
-              <%= f.text_field :body, placeholder: "Content", autofocus: true %>
-            </div>
-            <div class="ui fluid icon">
-              <%= button_tag type: :submit, class: "btn btn-success" do %>
-                <%= "Pray" %>
-              <% end %>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <% end %>
+  </div>
+</div>
 <!--   </div>
 </div> -->
 <!--
