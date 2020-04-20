@@ -55,15 +55,21 @@ em {
 
 .summary {
   padding-bottom: 10px;
+  padding-right: 100px;
 }
 
 .space {
   padding-left: 15px;
 }
 
+.message-space {
+  margin-right: 100px;
+}
+
 small {
   float: right;
   opacity: .6;
+  margin-top: -30px;
 }
 //--
 body {
