@@ -14,17 +14,53 @@
     display:none;
   }
 }
+//chatroom
+article {
+  margin: 6% auto;
+  text-align: center;
+}
 
+h4.ui.center {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.search-input {
+  padding-bottom: 30px;
+}
+
+input.ui.gray {
+  margin-right: 20px;
+  width: 30%
+}
+
+button.ui.gray {
+  margin-left: 20px;
+  width: 30%;
+}
+
+em {
+  border-bottom: 1px solid #888888;
+}
+
+.summary {
+  padding-bottom: 10px;
+}
+
+.space {
+  padding-left: 15px;
+}
+
+small {
+  float: right;
+  opacity: .6;
+}
+//--
 body {
   background: linear-gradient(41deg, purple 25%, orange 50%, white) fixed;
   background-size: cover;
 }
-
-article {
-  margin: 8% auto;
-  text-align: center;
-}
-
+//welcome
 .home-content {
   margin: 8% auto;
   text-align: center;
@@ -95,3 +131,4 @@ body.fadeout article{
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
+//--
