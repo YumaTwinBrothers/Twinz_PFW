@@ -39,7 +39,7 @@ $(document).on('turbolinks:load', function() {
   });
   submit_message();
   scroll_bottom();
-})
+});
 
 $(window).on('load', function(){
   $('body').removeClass('fadeout');
