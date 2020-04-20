@@ -54,7 +54,7 @@ $(function() {
       $('body').addClass('fadeout');  // bodyに class="fadeout"を挿入
       setTimeout(function(){
         window.location = url;  // 0.8秒後に取得したURLに遷移
-      }, 200);
+      }, 100);
     }
     return false;
   });
