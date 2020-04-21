@@ -17,12 +17,13 @@
 }
 //chatroom
 article {
-  margin: 3% auto;
+  margin: 2% auto;
   text-align: center;
 }
 
-h4.ui.center {
-  color: black;
+.chatroom-title {
+  font-size: 25px;
+  color: #888888;
   padding-bottom: 10px;
 }
 
@@ -75,28 +76,45 @@ small {
 body {
   background: linear-gradient(41deg, purple 25%, orange 50%, white) fixed;
   background-size: cover;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
 }
 //welcome
 .home-content {
-  margin: 8% auto;
+  margin: 3% auto;
   text-align: center;
+}
+
+h1 {
+  font-family: "Gill Sans", sans-serif;
+}
+
+h2 {
+  font-family: system-ui;
+}
+
+.app-title {
+  font-size: 45px;
+  color: #888888;
+  padding-bottom: 40px;
 }
 
 .about {
   font-size: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .title {
   font-size: 65px;
+  font-weight: normal;
   color: white;
-  padding-bottom: 8%;
+  padding-bottom: 7%;
 }
 
 .total-number {
   font-size: 25px;
   color: white;
-  padding-bottom: 3%;
+  padding-top: 2%;
 }
 
 .link-post {
@@ -108,6 +126,7 @@ body {
   width: 50%;
   margin: 0 auto;
   padding: 15px;
+  font-family: "Gill Sans", sans-serif;
 }
 
 .link-post:hover {
