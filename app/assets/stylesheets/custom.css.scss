@@ -22,7 +22,7 @@ article {
 }
 
 h4.ui.center {
-  color: white;
+  color: black;
   padding-bottom: 10px;
 }
 
@@ -54,16 +54,22 @@ em {
 }
 
 .summary {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-right: 100px;
 }
 
 .space {
   padding-left: 15px;
 }
 
+.message-space {
+  margin-right: 100px;
+}
+
 small {
   float: right;
   opacity: .6;
+  margin-top: -30px;
 }
 //--
 body {
