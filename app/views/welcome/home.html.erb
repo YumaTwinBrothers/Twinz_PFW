@@ -4,7 +4,7 @@
   </h2>
 
   <h2 class="home-icon">
-    <%= image_tag('praying.png') %>
+    <%= link_to image_tag('praying.png'), posts_path,:method => 'get'  %>
   </h2>
 
   <p class="about" align="center">
@@ -21,10 +21,8 @@
     Hope Is A Good Thing
   </h1>
 
-  <%= form_tag(posts_path,:method => 'get') do %>
-    <%= button_tag posts_path, class: "link-post" do %>
-      <%= 'Pray Now' %>
-    <% end %>
+  <%= button_tag type: 'button', class: "link-post", onclick: "link_to('#{posts_path}')" do %>
+    <%= 'Pray Now' %>
   <% end %>
 
   <p class="total-number" align="center">
