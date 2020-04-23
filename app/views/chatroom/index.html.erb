@@ -11,8 +11,7 @@
     <%= 'All' %>
   <% end %>
 <% end %>
-<!-- <div class="ui two column grid">
-  <div class="twelve wide column"> -->
+
 <div class="ui fluid raised card chatbox">
   <div class="content" id="messages">
     <div class="ui feed" id="message-container">
@@ -21,40 +20,19 @@
   </div>
   <div class="extra content">
     <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |f| %>
-      <div class="field">
+      <div class="field" style="font-size: 25px">
         <div class="ui fluid icon input">
           <%= f.text_field :username, :maxlength => 25, placeholder: "Name", autofocus: true %>
         </div>
         <div class="ui fluid icon input">
           <%= f.text_field :body, :maxlength => 340, placeholder: "I hope that our world turns and that things get better. #coronavirus", autofocus: true %>
-          <div class="ui fluid icon">
-            <%= button_tag type: :submit, class: "ui lighter button" do %>
-              <%= "Pray" %>
-            <% end %>
-          </div>
+        </div>
+        <div class="ui fluid icon">
+          <%= button_tag type: :submit, class: "ui secondary button", id: "submit" do %>
+            <%= "Pray" %>
+          <% end %>
         </div>
       </div>
     <% end %>
   </div>
 </div>
-<!--   </div>
-</div> -->
-<!--
-  <div class="four wide column">
-    <div class="ui fluid raised card chatbox">
-      <div class="content">
-        <div class="ui inverted vertical menu">
-          <a class="active item">
-            Home
-          </a>
-          <a class="item">
-            Messages
-          </a>
-          <a class="item">
-            Friends
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
