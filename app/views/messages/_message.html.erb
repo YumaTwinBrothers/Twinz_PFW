@@ -1,7 +1,8 @@
 <div class="event">
   <div class="content">
-    <div class="summary" style="font-weight: normal">
-      <em><%= message.username %></em> <br><%= message.body %>
+    <div class="summary" style="font-size: 45px; font-weight: normal; color: #505050">
+      <em><%= message.username %></em> <br><br><%= message.body %>
+      <br>
       <span class="space"></span>
     </div>
       <small><%= time_ago_in_words(message.created_at) %> ago</small>

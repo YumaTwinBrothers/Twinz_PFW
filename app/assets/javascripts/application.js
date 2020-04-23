@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require jquery_ujs
 //= require activestorage
 //= require turbolinks
 //= require semantic-ui
@@ -31,6 +32,13 @@ submit_message = function() {
     };
   });
 };
+
+// submit_button = function() {
+//   $('#submit').on('click', function(e) {
+//     $('button').click();
+//     e.target.value = "";
+//   });
+// };
 
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
@@ -53,7 +61,7 @@ $(function() {
     if (url !== '') {
       $('body').addClass('fadeout');  // bodyに class="fadeout"を挿入
       setTimeout(function(){
-        window.location = url;  // 0.8秒後に取得したURLに遷移
+        window.location = url;
       }, 100);
     }
     return false;

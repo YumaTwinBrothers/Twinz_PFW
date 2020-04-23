@@ -1,12 +1,18 @@
 @import "semantic-ui";
 
+article {
+  width: 95%;
+}
+
 .chatbox {
-  height: 540px;
+  height: 1350px;
 }
 
 #messages {
   height: 15em;
   overflow: auto;
+  line-height: 55px;
+  letter-spacing: 0.25em;
   word-break: break-all;
 }
 
@@ -17,64 +23,99 @@
 }
 //chatroom
 article {
-  margin: 2% auto;
+  margin: 3% auto;
   text-align: center;
 }
 
 .chatroom-title {
-  padding-bottom: 0px;
+  padding-bottom: 3%;
 }
 
 h2 img {
-  height: 50px;
+  height: 100px;
   width: auto;
 }
 
 .search-input {
   padding-bottom: 30px;
+  margin: 0 auto;
+  width: 80%;
 }
 
-input.ui.gray {
+input#search {
+  height: 60px;
+  font-size: 35px;
+  font-weight: normal;
+  color: #505050;
+  border-radius: 2em;
+}
+
+input.ui.gray.button {
   margin-right: 20px;
-  width: 30%
+  padding: 15px;
+  width: 30%;
+  border-radius: 2em;
+  height: 50px;
+  font-size: 25px;
 }
 
 button.ui.gray {
   margin-left: 20px;
+  padding: 15px;
   width: 30%;
+  margin-bottom: 50px;
+  border-radius: 2em;
+  height: 50px;
+  font-size: 25px;
 }
-button.ui.lighter {
-  margin-left: 10px;
-  margin-top: 10px;
-  padding: 10px 18px;
-}
-
-input#message_body {
-  margin-top: 10px;
+button.ui.secondary {
+  margin-top: 15px;
+  padding: 20px 0;
+  width: 80%;
 }
 
 em {
   border-bottom: 1px solid #888888;
+  padding-bottom: 10px;
 }
 
 .summary {
-  padding-bottom: 20px;
-  padding-right: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px dotted #888888;
 }
 
 .space {
   padding-left: 15px;
 }
 
-.message-space {
-  margin-right: 100px;
-}
-
 small {
   float: right;
   opacity: .6;
-  margin-top: -30px;
+  margin-top: -50px;
+  font-size: 25px;
 }
+
+.extra.content {
+  height: 300px;
+}
+
+input#message_username {
+  height: 80px;
+}
+
+input#message_body {
+  height: 80px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#submit {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  opacity: .6;
+}
+
 //--
 body {
   background: linear-gradient(41deg, purple 25%, orange 50%, white) fixed;
@@ -84,7 +125,7 @@ body {
 }
 //welcome
 .home-content {
-  margin: 6% auto;
+  margin: 20% auto;
   text-align: center;
 }
 
@@ -97,46 +138,53 @@ h2 {
 }
 
 .app-title {
-  font-size: 45px;
-  color: #888888;
-  padding-bottom: 40px;
+  font-size: 80px;
+  color: #505050;
+  padding-bottom: 0;
   font-weight: normal;
 }
 
+.home-icon img {
+  height: 250px;
+  width: auto;
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+  padding-bottom: 50px;
+}
+
 .about {
-  font-size: 35px;
-  padding-bottom: 20px;
+  font-size: 55px;
+  padding-bottom: 80px;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 55px;
   font-weight: normal;
   color: white;
   padding-bottom: 1%;
 }
 
 .hope {
-  font-size: 65px;
+  font-size: 80px;
   font-weight: normal;
   color: white;
-  padding-bottom: 5%;
+  padding-bottom: 15%;
 }
 
 .total-number {
-  font-size: 25px;
+  font-size: 30px;
   color: white;
-  padding-top: 2%;
+  padding-top: 3%;
 }
 
 .link-post {
-  font-size: 35px;
+  font-size: 45px;
   border: 1px solid #888888;
   filter: drop-shadow(0 0 0.2rem black);
   background: white;
   border-radius: .5em;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 30px;
   font-family: "Gill Sans", sans-serif;
 }
 

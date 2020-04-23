@@ -8,11 +8,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
   </head>
   <body class="fadeout">
     <article>
-      <div class="ui container">
+      <div class="ui">
         <%= render 'layouts/messages' %>
         <%= yield %>
       </div>
