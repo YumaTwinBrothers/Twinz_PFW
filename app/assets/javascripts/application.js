@@ -27,18 +27,11 @@ scroll_bottom = function() {
 submit_message = function() {
   $('#message_body').on('keydown', function(e) {
     if (e.keyCode == 13) {
-      $('button').click();
+      $('#submit').click();
       e.target.value = "";
     };
   });
 };
-
-// submit_button = function() {
-//   $('#submit').on('click', function(e) {
-//     $('button').click();
-//     e.target.value = "";
-//   });
-// };
 
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
@@ -71,3 +64,10 @@ $(function() {
 function link_to(link) {
   location.href = link;
 }
+
+$(function(){
+  $('#pray').keyup(function(){
+    var count = $(this).val().length;
+    $('#count').text(count);
+  });
+});

@@ -25,8 +25,9 @@
           <%= f.text_field :username, :maxlength => 25, placeholder: "Name", autofocus: true %>
         </div>
         <div class="ui fluid icon input">
-          <%= f.text_field :body, :maxlength => 340, placeholder: "I hope that our world turns and that things get better. #coronavirus", autofocus: true %>
+          <%= f.text_field :body, id: "pray", :maxlength => 340, placeholder: "I hope that our world turns and that things get better. #coronavirus", autofocus: true %>
         </div>
+        <p class="count"><span id="count">0</span>/340</p>
         <div class="ui fluid icon">
           <%= button_tag type: :submit, class: "ui secondary button", id: "submit" do %>
             <%= "Pray" %>

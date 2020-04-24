@@ -103,7 +103,7 @@ input#message_username {
   height: 80px;
 }
 
-input#message_body {
+input#pray {
   height: 80px;
   margin-top: 20px;
   width: 100%;
@@ -114,6 +114,11 @@ input#message_body {
   font-weight: bolder;
   color: #ffffff;
   opacity: .6;
+}
+
+p.count {
+  float: left;
+  padding-left: 10px;
 }
 
 //--
