@@ -10,5 +10,4 @@ test:
 #   channel_prefix: twinz_pfw_2020_production
 production:
   adapter: redis
-  url: redis://10.10.3.153:6381
-  channel_prefix: twinz_pfw_2020_production
+  url: <%= ENV["REDIS_URL"] %>
