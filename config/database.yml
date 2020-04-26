@@ -5,7 +5,7 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
@@ -19,7 +19,11 @@ development:
 test:
   <<: *default
   database: Twinz_pfw_test
-
+  
 production:
   <<: *default
-  database: Twinz_pfw_production
+  adapter: postgresql
+  database: app_production
+  username: app
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  host: localhost
