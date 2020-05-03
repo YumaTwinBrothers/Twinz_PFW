@@ -1,5 +1,8 @@
 {
   "name": "twinz_pfw_2020",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "infinite-scroll": "^3.0.6",
+    "jquery": "^3.5.0"
+  }
 }

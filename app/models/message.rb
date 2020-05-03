@@ -6,7 +6,7 @@ class Message < ApplicationRecord
     if search
       Message.where(['body LIKE ?', "%#{search}%"])
     else
-      order(created_at: "ASC")
+      order(created_at: "DESC")
     end
   end
 end

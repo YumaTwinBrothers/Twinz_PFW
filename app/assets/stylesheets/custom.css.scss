@@ -5,15 +5,15 @@ article {
 }
 
 .chatbox {
-  height: 1350px;
+  height: auto;
 }
 
 #messages {
-  height: 15em;
-  overflow: auto;
+  height: 0;
   line-height: 55px;
   letter-spacing: 0.25em;
   word-break: break-all;
+  padding: 0;
 }
 
 .input {
@@ -72,6 +72,7 @@ button.ui.secondary {
   margin-top: 15px;
   padding: 20px 0;
   width: 80%;
+  border-radius: 1em;
 }
 
 em {
@@ -80,8 +81,13 @@ em {
 }
 
 .summary {
+  background-color: white;
   padding-bottom: 50px;
-  border-bottom: 1px dotted #888888;
+  padding: 14px;
+}
+
+.content {
+  padding-top: 20px;
 }
 
 .space {
@@ -101,12 +107,14 @@ small {
 
 input#message_username {
   height: 80px;
+  border-radius: 1em;
 }
 
 input#pray {
   height: 80px;
   margin-top: 20px;
   width: 100%;
+  border-radius: 1em;
 }
 
 #submit {
@@ -119,6 +127,7 @@ input#pray {
 p.count {
   float: left;
   padding-left: 10px;
+  color: white;
 }
 
 //--
